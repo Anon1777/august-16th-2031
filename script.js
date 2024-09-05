@@ -28,7 +28,7 @@ let a, b, c, d, e, f, g, h, i, j, k, l, m, n;
 
 setInterval(function () {
     a = new Date();
-    b = new Date(Date.parse("16 Aug 2031 15:00:00 EST"));
+    b = new Date(Date.parse("16 Oct 2031 15:00:00 EST"));
     c = new Date(b.getTime() - a.getTime());
     d = (c / 1000 / 60 / 60 / 24 / 30.4167 / 12); // years
     e = (c / 1000 / 60 / 60 / 24 / 30.4167); // months
@@ -62,8 +62,8 @@ setInterval(function () {
         i += 59;
     }
 
-    A.innerText = "Current Date: " + new Date("16 Aug 2031 15:00:00 EST").toString();
-    B.innerText = "Target Date: " + a.toString();
+    A.innerText = "Target Date: " + new Date("16 Oct 2031 15:00:00 EST").toString();
+    B.innerText = "Current Date: " + a.toString();
     C.innerText = "Milliseconds Remaining: " + c.getTime() + " ms";
     D.innerText = "Years Remaining: " + Math.round(d) + " yr";
     E.innerText = "Exact Years Remaining: " + d.toFixed(12) + " yr";
