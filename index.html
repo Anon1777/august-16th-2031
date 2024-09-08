@@ -9,15 +9,15 @@
 </head>
 <body>
     <div class="invis-head-tag"></div>
-    <h1 class="header">Is it October 16th, 2031 yet!?</h1>
+    <h1 class="header" id="head">Is it October 16th, 2031 yet!?</h1>
     <div class="container">
-        <p class="content" id="date">Target Date: </p>
-        <p class="content" id="current">Current Date: </p>
-        <p class="content" id="raw">Milliseconds: </p>
-        <p class="content" id="years">Years: </p>
-        <p class="content" id="years-decimal">Years (in Decimal Form): </p>
-        <p class="content" id="years-months">Years and Months: </p>
-        <p class="content" id="years-months-decimal">Years and Months (in Decimal Form): </p>
+        <p class="content" id="date"></p>
+        <p class="content" id="current"></p>
+        <p class="content" id="raw"></p>
+        <p class="content" id="years"></p>
+        <p class="content" id="years-decimal"></p>
+        <p class="content" id="years-months"></p>
+        <p class="content" id="years-months-decimal"></p>
         <p class="content" id="years-months-days">Years, Months, and Days: </p>
         <p class="content" id="years-days">Years and Days:</p>
         <p class="content" id="months">Months: </p>
@@ -37,6 +37,7 @@
         <p class="content" id="minutes-decimal">Minutes (in Decimal Form):</p>
         <p class="content" id="minutes-seconds">Minutes and Seconds: </p>
         <p class="content" id="seconds">Seconds: </p>
+        <button id="btn" onclick="toggle();">Countdown to November 11th, 2026 instead</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>

@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 .container {
-    line-height: 12px;
+    margin-top: 32px;
+    line-height: 14px;
+    text-align: center;
+    font-family: "B612 Mono", monospace;
+    width: 50%;
+    text-justify: distribute;
+    color: #ccaaff;
+    -webkit-text-stroke: 1px #664499 
+}
+.header {
+    font-size: 64px;
+    text-align: center;
+    font-family: Dosis, sans-serif;
+    color: white;
+    -webkit-text-stroke: 3px #008585;
 }

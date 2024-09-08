@@ -24,11 +24,14 @@ let W = document.getElementById("minutes");
 let X = document.getElementById("minutes-decimal");
 let Y = document.getElementById("minutes-seconds");
 let Z = document.getElementById("seconds");
-let a, b, c, d, e, f, g, h, i, j, k, l, m, n;
+let AA = document.getElementById("btn");
+let AB = document.getElementById("head");
+let a, b, c, d, e, f, g, h, i, j, k, l, m, n, o;
+b = new Date(Date.parse("16 Oct 2031 15:00:00 EDT"));
+o = false; // toggle
 
 setInterval(function () {
     a = new Date();
-    b = new Date(Date.parse("16 Oct 2031 15:00:00 EST"));
     c = new Date(b.getTime() - a.getTime());
     d = (c / 1000 / 60 / 60 / 24 / 30.4167 / 12); // years
     e = (c / 1000 / 60 / 60 / 24 / 30.4167); // months
@@ -61,8 +64,7 @@ setInterval(function () {
     if (Math.floor(i) == 0) {
         i += 59;
     }
-
-    A.innerText = "Target Date: " + new Date("16 Oct 2031 15:00:00 EST").toString();
+    A.innerText = "Target Date: " + b.toString();
     B.innerText = "Current Date: " + a.toString();
     C.innerText = "Milliseconds Remaining: " + c.getTime() + " ms";
     D.innerText = "Years Remaining: " + Math.round(d) + " yr";
@@ -89,3 +91,16 @@ setInterval(function () {
     Y.innerText = "Minutes and Seconds Remaining: " + Math.floor(h) + " min " + Math.round(n) + " sec";
     Z.innerText = "Seconds Remaining: " + Math.round(i) + " sec";
 }, 1);
+
+function toggle(){
+    if(!o){
+        b = new Date(Date.parse("11 Nov 2026 00:00:00 EST"));
+        AA.innerText = "Countdown to October 16th, 2031 instead";
+        AB.innerText = "Is it November 11th, 2026 yet!?"
+    } else {
+        b = new Date(Date.parse("16 Oct 2031 15:00:00 EDT"));
+        AA.innerText = "Countdown to November 11th, 2026 instead";
+        AB.innerText = "Is it October 16th, 2031 yet!?";
+    }
+    o = !o;
+}
