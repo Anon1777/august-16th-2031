@@ -27,7 +27,7 @@ let Z = document.getElementById("seconds");
 let AA = document.getElementById("btn");
 let AB = document.getElementById("head");
 let a, b, c, d, e, f, g, h, i, j, k, l, m, n, o;
-b = new Date(Date.parse("16 Oct 2031 15:00:00 EDT"));
+b = new Date(Date.parse("16 May 2032 15:00:00 EDT"));
 o = false; // toggle
 
 setInterval(function () {
