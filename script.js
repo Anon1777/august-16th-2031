@@ -97,10 +97,22 @@ function toggle(){
         b = new Date(Date.parse("11 Nov 2026 00:00:00 EST"));
         AA.innerText = "Countdown to October 16th, 2031 instead";
         AB.innerText = "Is it November 11th, 2026 yet!?"
+        D.hidden = true;
+        E.hidden = true;
+        F.hidden = true;
+        G.hidden = true;
+        H.hidden = true;
+        I.hidden = true;
     } else {
         b = new Date(Date.parse("16 Oct 2031 15:00:00 EDT"));
         AA.innerText = "Countdown to November 11th, 2026 instead";
         AB.innerText = "Is it October 16th, 2031 yet!?";
+        D.hidden = false;
+        E.hidden = false;
+        F.hidden = false;
+        G.hidden = false;
+        H.hidden = false;
+        I.hidden = false;
     }
     o = !o;
 }
